@@ -46,6 +46,21 @@ public class ServiceProject {
 		this.avail = avail;
 	}
 	
+	/**
+	 * @param projectID
+	 * @param projectCost
+	 * @param amountCollected
+	 * @param pendingAmount
+	 */
+	public ServiceProject(long projectID, long projectCost, double amountCollected, double pendingAmount) {
+		super();
+		this.projectID = projectID;
+		this.projectCost = projectCost;
+		this.amountCollected = amountCollected;
+		this.pendingAmount = pendingAmount;
+		this.dnrList = new ArrayList<Donor>();
+		this.avail = Available.AVAILABLE;
+	}
 	
 	/**
 	 * @return the projectID

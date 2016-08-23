@@ -130,7 +130,11 @@ import com.training.utils.ProjectDAO;
 		return "Donor [dnrId=" + dnrId + ", name=" + name + ", emailId=" + emailId + ", amountDonated=" + amountDonated
 				+ "]";
 	}
-	// To be edited
+	/**
+	 * 
+	 * @param amount
+	 * @param proj
+	 */
 	public void donate(double amount, ServiceProject proj){
 		double newAmount = proj.getAmountCollected() + amount;
 		proj.setAmountCollected(newAmount);
